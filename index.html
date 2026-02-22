@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocni obdobi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AT:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Playwrite AT", cursive;
+        }
+        .parallax{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 100vh;
+            position: relative;
+        }
+         html {
+            scroll-snap-type: y mandatory;
+            scroll-behavior: smooth;
+        }
+        section {
+            scroll-snap-align: start;
+        }
+        .winterBG {
+            background-image: url("IMG/winter.webp");
+            
+        }
+        .summerBG {
+            background-image: url("IMG/summer.webp");
+        }
+        .winterP, .summerP {
+            text-align: center;
+            flex-direction: column;
+           
+        }
+        h2{
+            font-size: 5em;
+        }
+        p {
+            font-size: 2em;
+        }
+        .wave {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            line-height: 0;
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <section class="parallax winterBG">
+        <h2>Zima</h2>
+        <img src="IMG/wave.svg" class="wave">
+    </section>
+    <section class="parallax winterP">
+        <h2>Zima</h2>
+        <p>Zima je jedno ze čtyř ročních období mezi podzimem a jarem střídajících se v mírných a polárních oblastech.</p>
+    </section>
+    <section class="parallax summerBG">
+        <h2>Léto</h2>
+        <img src="IMG/wave.svg" class="wave">
+    </section>
+    <section class="parallax summerP">
+        <h2>Léto</h2>
+        <p>Léto je roční období mezi jarem a podzimem. Nastává v mírných a polárních oblastech, v jinou dobu na severní a jižní polokouli.</p>
+    </section>
+</body>
+</html>
